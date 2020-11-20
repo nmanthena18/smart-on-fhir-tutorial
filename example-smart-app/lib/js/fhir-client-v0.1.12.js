@@ -16322,6 +16322,8 @@ module.exports.verify = function(jwtString, secretOrPublicKey, options, callback
 
   try {
    payload = this.decode(jwtString);
+   console.log(payload)
+   debugger
   } catch(err) {
     return done(err);
   }
